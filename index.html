@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>José Miguel del Río - AI / ML projects</title>
+<meta name="description" content="Student learning AI & ML. End-to-end ML and LLM projects with live demos." />
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #9198a1; --accent: #58a6ff; --accent2: #d2a8ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; padding: 0 20px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  header { padding: 64px 0 32px; border-bottom: 1px solid var(--border); }
+  h1 { font-size: 2.1rem; letter-spacing: -0.5px; }
+  .tagline { color: var(--muted); font-size: 1.1rem; margin-top: 8px; }
+  .links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a {
+    color: var(--text); text-decoration: none; border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 8px; font-size: 0.92rem; transition: 0.15s;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  section { padding: 40px 0; }
+  h2 { font-size: 1.4rem; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; display: flex; flex-direction: column; transition: 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 0.92rem; flex-grow: 1; }
+  .tags { margin: 12px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 0.72rem; color: var(--accent2); border: 1px solid var(--border); border-radius: 20px; padding: 2px 9px; }
+  .demo { color: #3fb950; border-color: #238636; }
+  .card .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; }
+  .card .actions a { color: var(--accent); text-decoration: none; font-size: 0.88rem; font-weight: 500; }
+  .card .actions a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: 0.85rem; padding: 32px 0 56px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>José Miguel del Río</h1>
+    <p class="tagline">Student learning AI &amp; Machine Learning · building ML and LLM projects end to end · Contributor at Cylstat</p>
+    <div class="links">
+      <a href="https://github.com/delcenjo">GitHub</a>
+      <a href="https://huggingface.co/delcenjo">Hugging Face</a>
+      <a href="https://www.kaggle.com/delcenjo">Kaggle</a>
+      <a href="https://www.linkedin.com/in/jos%C3%A9-miguel-del-r%C3%ADo-centeno-84a49b418">LinkedIn</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <p class="sub">A few things I've built to learn by doing - from classic ML to LLM apps, several with live demos you can try.</p>
+    <div class="grid">
+
+      <div class="card">
+        <h3>AI Insight Assistant</h3>
+        <p>Capstone: an internal assistant combining RAG over documents and a tool-using agent that queries a SQL database. FastAPI + Streamlit + Docker.</p>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">LLM agent</span><span class="tag">FastAPI</span><span class="tag">Docker</span></div>
+        <div class="actions"><a href="https://github.com/delcenjo/ai-insight-assistant">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Text Summarizer</h3>
+        <p>Abstractive summariser (distilBART) that handles long documents via chunking. Python package, CLI and a live web demo.</p>
+        <div class="tags"><span class="tag">NLP</span><span class="tag">Transformers</span><span class="tag demo">Live demo</span></div>
+        <div class="actions"><a href="https://huggingface.co/spaces/delcenjo/text-summarizer">Live demo →</a><a href="https://github.com/delcenjo/text-summarizer">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Flower Image Classifier</h3>
+        <p>Transfer-learning ResNet-18 recognising five flower species. Model on the Hub and a live demo where you upload a photo.</p>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">Computer vision</span><span class="tag demo">Live demo</span></div>
+        <div class="actions"><a href="https://huggingface.co/spaces/delcenjo/flower-classifier-demo">Live demo →</a><a href="https://github.com/delcenjo/flower-image-classifier">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>RAG Document Assistant</h3>
+        <p>Retrieval-augmented generation over a document corpus: chunking, embeddings, cosine search and grounded answers with citations.</p>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">LLM</span></div>
+        <div class="actions"><a href="https://github.com/delcenjo/rag-document-assistant">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>LLM SQL Agent</h3>
+        <p>A tool-using agent that answers natural-language questions over a SQL database, with a read-only query guard.</p>
+        <div class="tags"><span class="tag">LLM agent</span><span class="tag">Tool use</span><span class="tag">SQL</span></div>
+        <div class="actions"><a href="https://github.com/delcenjo/llm-sql-agent">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Customer Churn Prediction</h3>
+        <p>End-to-end ML pipeline (EDA → preprocessing → model comparison → evaluation) on the Telco dataset. Also a Kaggle notebook.</p>
+        <div class="tags"><span class="tag">scikit-learn</span><span class="tag">Tabular ML</span></div>
+        <div class="actions"><a href="https://github.com/delcenjo/customer-churn-prediction">Code →</a><a href="https://www.kaggle.com/code/delcenjo/telco-customer-churn-ml">Kaggle →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>LLM Evaluation Harness</h3>
+        <p>A small harness to compare an LLM against baseline classifiers on a labelled task, with consistent metrics.</p>
+        <div class="tags"><span class="tag">Evaluation</span><span class="tag">LLM</span></div>
+        <div class="actions"><a href="https://github.com/delcenjo/llm-eval-harness">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <h3>PyRegex</h3>
+        <p>CLI toolkit for regular expressions: explain (AST), test, profile (ReDoS detection) and audit/mask PII, with an interactive shell.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">CLI</span><span class="tag">Tooling</span></div>
+        <div class="actions"><a href="https://github.com/delcenjo/py-regex">Code →</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    Built with plain HTML on GitHub Pages · <a href="https://github.com/delcenjo" style="color:var(--accent)">github.com/delcenjo</a>
+  </footer>
+</div>
+</body>
+</html>
